@@ -1,0 +1,15 @@
+[gd_resource type="ORMMaterial3D" load_steps=5 format=3 uid="uid://bl3k6ejektkgm"]
+
+[ext_resource type="Texture2D" uid="uid://biyxkmxk5phi8" path="res://polyhaven/table/textures/round_wooden_table_01_diff_2k.png" id="1_q46su"]
+[ext_resource type="Texture2D" uid="uid://cowx4lp4w0657" path="res://polyhaven/table/textures/round_wooden_table_01_bent.png" id="2_jbhjy"]
+[ext_resource type="Texture2D" uid="uid://oh7kru46qryl" path="res://polyhaven/table/textures/round_wooden_table_01_nor_gl_2k.png" id="3_2t2ln"]
+[ext_resource type="Texture2D" uid="uid://cpkhb4orbcl8d" path="res://polyhaven/table/textures/round_wooden_table_01_arm_2k.png" id="4_47q4a"]
+
+[resource]
+albedo_texture = ExtResource("1_q46su")
+orm_texture = ExtResource("4_47q4a")
+normal_enabled = true
+normal_texture = ExtResource("3_2t2ln")
+bent_normal_enabled = true
+bent_normal_texture = ExtResource("2_jbhjy")
+ao_enabled = true

@@ -1,0 +1,15 @@
+[gd_resource type="ORMMaterial3D" load_steps=5 format=3 uid="uid://bxcjq7qwybnv0"]
+
+[ext_resource type="Texture2D" uid="uid://i5yh50r7w8wq" path="res://polyhaven/coffee_table/textures/CoffeeCart_01_cart_diff_2k.png" id="1_orftv"]
+[ext_resource type="Texture2D" uid="uid://d243y4rjwocxh" path="res://polyhaven/coffee_table/textures/CoffeeCart_01_cart_bent.png" id="2_3a7mu"]
+[ext_resource type="Texture2D" uid="uid://b7b8u336rq7o2" path="res://polyhaven/coffee_table/textures/CoffeeCart_01_cart_nor_gl_2k.png" id="3_gsmix"]
+[ext_resource type="Texture2D" uid="uid://cqs4vicruryfv" path="res://polyhaven/coffee_table/textures/CoffeeCart_01_cart_arm_2k.png" id="4_6qsuo"]
+
+[resource]
+albedo_texture = ExtResource("1_orftv")
+orm_texture = ExtResource("4_6qsuo")
+normal_enabled = true
+normal_texture = ExtResource("3_gsmix")
+bent_normal_enabled = true
+bent_normal_texture = ExtResource("2_3a7mu")
+ao_enabled = true

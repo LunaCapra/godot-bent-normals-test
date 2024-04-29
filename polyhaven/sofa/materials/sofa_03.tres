@@ -1,0 +1,15 @@
+[gd_resource type="ORMMaterial3D" load_steps=5 format=3 uid="uid://sko1f0erp1cb"]
+
+[ext_resource type="Texture2D" uid="uid://h2v4j1mp7x0a" path="res://polyhaven/sofa/textures/sofa_03_diff_2k.jpg" id="1_63emy"]
+[ext_resource type="Texture2D" uid="uid://6acx1ws0v46u" path="res://polyhaven/sofa/textures/sofa_03_bent.png" id="2_3w54o"]
+[ext_resource type="Texture2D" uid="uid://vv07votqx25l" path="res://polyhaven/sofa/textures/sofa_03_nor_gl_2k.jpg" id="3_bd0fn"]
+[ext_resource type="Texture2D" uid="uid://b2o23cult7kxy" path="res://polyhaven/sofa/textures/sofa_03_arm_2k.png" id="4_xos55"]
+
+[resource]
+albedo_texture = ExtResource("1_63emy")
+orm_texture = ExtResource("4_xos55")
+normal_enabled = true
+normal_texture = ExtResource("3_bd0fn")
+bent_normal_enabled = true
+bent_normal_texture = ExtResource("2_3w54o")
+ao_enabled = true
