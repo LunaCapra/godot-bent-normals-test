@@ -1,0 +1,15 @@
+[gd_resource type="ORMMaterial3D" load_steps=5 format=3 uid="uid://b6npkmiu7cf75"]
+
+[ext_resource type="Texture2D" uid="uid://dqnklqqwv64a8" path="res://polyhaven/brass_goblets/textures/brass_goblet_02_diff_2k.png" id="1_tht6n"]
+[ext_resource type="Texture2D" uid="uid://bklgwlfs6nq2d" path="res://polyhaven/brass_goblets/textures/brass_goblet_02_bent.png" id="2_jehcx"]
+[ext_resource type="Texture2D" uid="uid://celkhclne88m6" path="res://polyhaven/brass_goblets/textures/brass_goblet_02_nor_gl_2k.png" id="3_71sgs"]
+[ext_resource type="Texture2D" uid="uid://fvb83nas2fr6" path="res://polyhaven/brass_goblets/textures/brass_goblet_02_arm_2k.png" id="4_lcrtt"]
+
+[resource]
+albedo_texture = ExtResource("1_tht6n")
+orm_texture = ExtResource("4_lcrtt")
+normal_enabled = true
+normal_texture = ExtResource("3_71sgs")
+bent_normal_enabled = true
+bent_normal_texture = ExtResource("2_jehcx")
+ao_enabled = true
