@@ -1,7 +1,7 @@
 [gd_resource type="ORMMaterial3D" load_steps=5 format=3 uid="uid://fexbto1clywx"]
 
 [ext_resource type="Texture2D" uid="uid://b28c6kcfqvmhn" path="res://polyhaven/coffee_table/textures/CoffeeCart_01_mugs_diff_2k.png" id="1_8xgyq"]
-[ext_resource type="Texture2D" uid="uid://07rdtdw6a4hk" path="res://polyhaven/coffee_table/textures/CoffeeCart_01_mugs_bent.png" id="2_eqwmq"]
+[ext_resource type="Texture2D" uid="uid://07rdtdw6a4hk" path="res://polyhaven/coffee_table/textures/CoffeeCart_01_mugs_bent.png" id="2_n8uvh"]
 [ext_resource type="Texture2D" uid="uid://bcpe7sbs5tut3" path="res://polyhaven/coffee_table/textures/CoffeeCart_01_mugs_nor_gl_2k.png" id="3_ik3xc"]
 [ext_resource type="Texture2D" uid="uid://dl78j5dxrq2te" path="res://polyhaven/coffee_table/textures/CoffeeCart_01_mugs_arm_2k.png" id="4_r0v5s"]
 
@@ -11,5 +11,5 @@ orm_texture = ExtResource("4_r0v5s")
 normal_enabled = true
 normal_texture = ExtResource("3_ik3xc")
 bent_normal_enabled = true
-bent_normal_texture = ExtResource("2_eqwmq")
+bent_normal_texture = ExtResource("2_n8uvh")
 ao_enabled = true
