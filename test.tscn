@@ -20,8 +20,6 @@ ssr_max_steps = 512
 ssr_depth_tolerance = 0.01
 ssao_enabled = true
 ssao_radius = 0.3
-ssil_enabled = true
-sdfgi_enabled = true
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mcvs5"]
 albedo_color = Color(0.103744, 0.103744, 0.103744, 1)
