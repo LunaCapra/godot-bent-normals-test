@@ -1,0 +1,15 @@
+[gd_resource type="ShaderMaterial" load_steps=6 format=3 uid="uid://c3qh0rrxufm8l"]
+
+[ext_resource type="Shader" uid="uid://qjwgwhg5xptn" path="res://visual_shader_test.tres" id="1_13o7l"]
+[ext_resource type="Texture2D" uid="uid://biyxkmxk5phi8" path="res://polyhaven/table/textures/round_wooden_table_01_diff_2k.png" id="2_gk0rk"]
+[ext_resource type="Texture2D" uid="uid://cowx4lp4w0657" path="res://polyhaven/table/textures/round_wooden_table_01_bent.png" id="3_qpxbf"]
+[ext_resource type="Texture2D" uid="uid://oh7kru46qryl" path="res://polyhaven/table/textures/round_wooden_table_01_nor_gl_2k.png" id="4_h3yb7"]
+[ext_resource type="Texture2D" uid="uid://cpkhb4orbcl8d" path="res://polyhaven/table/textures/round_wooden_table_01_arm_2k.png" id="5_b24fa"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_13o7l")
+shader_parameter/Albedo = ExtResource("2_gk0rk")
+shader_parameter/ORM = ExtResource("5_b24fa")
+shader_parameter/Normal = ExtResource("4_h3yb7")
+shader_parameter/Bent_Normal = ExtResource("3_qpxbf")

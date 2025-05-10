@@ -1,0 +1,100 @@
+[gd_resource type="VisualShader" load_steps=9 format=3 uid="uid://qjwgwhg5xptn"]
+
+[sub_resource type="VisualShaderNodeTexture" id="VisualShaderNodeTexture_vkogs"]
+source = 5
+texture_type = 1
+
+[sub_resource type="VisualShaderNodeTexture" id="VisualShaderNodeTexture_h32tt"]
+expanded_output_ports = [0]
+source = 5
+texture_type = 1
+
+[sub_resource type="VisualShaderNodeTexture2DParameter" id="VisualShaderNodeTexture2DParameter_q066q"]
+parameter_name = "Albedo"
+texture_type = 1
+
+[sub_resource type="VisualShaderNodeTexture2DParameter" id="VisualShaderNodeTexture2DParameter_gs8gv"]
+parameter_name = "ORM"
+
+[sub_resource type="VisualShaderNodeTexture2DParameter" id="VisualShaderNodeTexture2DParameter_hpewd"]
+parameter_name = "Normal"
+texture_type = 2
+
+[sub_resource type="VisualShaderNodeTexture" id="VisualShaderNodeTexture_34i1w"]
+expanded_output_ports = [0]
+source = 5
+texture_type = 1
+
+[sub_resource type="VisualShaderNodeTexture2DParameter" id="VisualShaderNodeTexture2DParameter_dvl8q"]
+parameter_name = "Bent_Normal"
+texture_type = 2
+
+[sub_resource type="VisualShaderNodeTexture" id="VisualShaderNodeTexture_iv0fk"]
+expanded_output_ports = [0]
+source = 5
+texture_type = 1
+
+[resource]
+code = "shader_type spatial;
+render_mode blend_mix, depth_draw_opaque, cull_back, diffuse_lambert, specular_schlick_ggx;
+
+uniform sampler2D Albedo : source_color;
+uniform sampler2D ORM;
+uniform sampler2D Normal : hint_normal;
+uniform sampler2D Bent_Normal : hint_normal;
+
+
+
+void fragment() {
+	vec4 n_out2p0;
+// Texture2D:2
+	n_out2p0 = texture(Albedo, UV);
+
+
+	vec4 n_out3p0;
+// Texture2D:3
+	n_out3p0 = texture(ORM, UV);
+	float n_out3p1 = n_out3p0.r;
+	float n_out3p2 = n_out3p0.g;
+	float n_out3p3 = n_out3p0.b;
+
+
+	vec4 n_out7p0;
+// Texture2D:7
+	n_out7p0 = texture(Normal, UV);
+
+
+	vec4 n_out9p0;
+// Texture2D:9
+	n_out9p0 = texture(Bent_Normal, UV);
+
+
+// Output:0
+	ALBEDO = vec3(n_out2p0.xyz);
+	METALLIC = n_out3p3;
+	ROUGHNESS = n_out3p2;
+	AO = n_out3p1;
+	NORMAL_MAP = vec3(n_out7p0.xyz);
+	BENT_NORMAL_MAP = vec3(n_out9p0.xyz);
+
+
+}
+"
+nodes/fragment/0/position = Vector2(400, 160)
+nodes/fragment/2/node = SubResource("VisualShaderNodeTexture_vkogs")
+nodes/fragment/2/position = Vector2(-300, 20)
+nodes/fragment/3/node = SubResource("VisualShaderNodeTexture_h32tt")
+nodes/fragment/3/position = Vector2(-300, 340)
+nodes/fragment/4/node = SubResource("VisualShaderNodeTexture2DParameter_q066q")
+nodes/fragment/4/position = Vector2(-680, -20)
+nodes/fragment/5/node = SubResource("VisualShaderNodeTexture2DParameter_gs8gv")
+nodes/fragment/5/position = Vector2(-680, 340)
+nodes/fragment/6/node = SubResource("VisualShaderNodeTexture2DParameter_hpewd")
+nodes/fragment/6/position = Vector2(-680, 700)
+nodes/fragment/7/node = SubResource("VisualShaderNodeTexture_34i1w")
+nodes/fragment/7/position = Vector2(-300, 700)
+nodes/fragment/8/node = SubResource("VisualShaderNodeTexture2DParameter_dvl8q")
+nodes/fragment/8/position = Vector2(-680, 1020)
+nodes/fragment/9/node = SubResource("VisualShaderNodeTexture_iv0fk")
+nodes/fragment/9/position = Vector2(-300, 1020)
+nodes/fragment/connections = PackedInt32Array(2, 0, 0, 0, 3, 1, 0, 6, 3, 2, 0, 3, 3, 3, 0, 2, 4, 0, 2, 2, 5, 0, 3, 2, 6, 0, 7, 2, 7, 0, 0, 9, 8, 0, 9, 2, 9, 0, 0, 11)
