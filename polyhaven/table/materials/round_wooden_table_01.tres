@@ -1,4 +1,4 @@
-[gd_resource type="ORMMaterial3D" load_steps=5 format=3 uid="uid://bl3k6ejektkgm"]
+[gd_resource type="ORMMaterial3D" format=3 uid="uid://bl3k6ejektkgm"]
 
 [ext_resource type="Texture2D" uid="uid://biyxkmxk5phi8" path="res://polyhaven/table/textures/round_wooden_table_01_diff_2k.png" id="1_q46su"]
 [ext_resource type="Texture2D" uid="uid://cowx4lp4w0657" path="res://polyhaven/table/textures/round_wooden_table_01_bent.png" id="2_jbhjy"]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://cdokoambrpgr8"]
+[gd_scene format=3 uid="uid://cdokoambrpgr8"]
 
 [ext_resource type="Texture2D" uid="uid://bn7cchja645hr" path="res://kloofendal_48d_partly_cloudy_puresky_2k.hdr" id="1_fwrul"]
 [ext_resource type="Script" uid="uid://f5xx4dwxlujg" path="res://screenshot.gd" id="1_vbegm"]
@@ -10,6 +10,7 @@
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_eh4mr"]
 panorama = ExtResource("1_fwrul")
+energy_multiplier = 2.0
 
 [sub_resource type="Sky" id="Sky_nrtni"]
 sky_material = SubResource("PanoramaSkyMaterial_eh4mr")
@@ -17,10 +18,9 @@ sky_material = SubResource("PanoramaSkyMaterial_eh4mr")
 [sub_resource type="Environment" id="Environment_jmbty"]
 background_mode = 2
 sky = SubResource("Sky_nrtni")
-tonemap_mode = 3
+tonemap_mode = 4
 ssr_max_steps = 512
 ssr_depth_tolerance = 0.01
-ssao_enabled = true
 ssao_radius = 0.3
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mcvs5"]
@@ -31,38 +31,38 @@ material = SubResource("StandardMaterial3D_mcvs5")
 size = Vector2(50, 50)
 orientation = 1
 
-[node name="Node3D" type="Node3D"]
+[node name="Node3D" type="Node3D" unique_id=936850712]
 script = ExtResource("1_vbegm")
 
-[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1900305416]
 environment = SubResource("Environment_jmbty")
 
-[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1825004888]
 transform = Transform3D(0.707107, 0.5, -0.5, 0, 0.707107, 0.707107, 0.707107, -0.5, 0.5, 0, 0, 0)
 shadow_enabled = true
 directional_shadow_max_distance = 15.0
 
-[node name="sofa_03_2k" parent="." instance=ExtResource("4_ui2un")]
+[node name="sofa_03_2k" parent="." unique_id=1342000951 instance=ExtResource("4_ui2un")]
 transform = Transform3D(0.946486, 0, -0.322745, 0, 1, 0, 0.322745, 0, 0.946486, 2.42328, 0, 0.237291)
 
-[node name="CoffeeCart_01_2k" parent="." instance=ExtResource("3_c4kyt")]
+[node name="CoffeeCart_01_2k" parent="." unique_id=55424854 instance=ExtResource("3_c4kyt")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0460954, 0, 0)
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1219916323]
 mesh = SubResource("QuadMesh_aognv")
 
-[node name="ReflectionProbe" type="ReflectionProbe" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.22092, 1.53986, 0)
+[node name="ReflectionProbe" type="ReflectionProbe" parent="." unique_id=1978450450]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.22092, 1.1550953, 0)
 update_mode = 1
-size = Vector3(20, 3.60059, 20)
+size = Vector3(53.785156, 4.370119, 53.29492)
 
-[node name="round_wooden_table_01_2k" parent="." instance=ExtResource("4_e41e3")]
+[node name="round_wooden_table_01_2k" parent="." unique_id=618560890 instance=ExtResource("4_e41e3")]
 transform = Transform3D(0.5, 0, -0.866025, 0, 1, 0, 0.866025, 0, 0.5, 4.3013, 0, 1.43969)
 
-[node name="round_wooden_table_01" parent="round_wooden_table_01_2k" index="0"]
+[node name="round_wooden_table_01" parent="round_wooden_table_01_2k" index="0" unique_id=1260600465]
 surface_material_override/0 = ExtResource("6_vbegm")
 
-[node name="brass_goblets_2k" parent="round_wooden_table_01_2k" instance=ExtResource("5_1ybx5")]
+[node name="brass_goblets_2k" parent="round_wooden_table_01_2k" unique_id=626177298 instance=ExtResource("5_1ybx5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
 
 [editable path="round_wooden_table_01_2k"]

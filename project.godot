@@ -11,9 +11,11 @@ config_version=5
 [application]
 
 config/name="Bent Normals"
-config/features=PackedStringArray("4.5", "Forward Plus")
+config/features=PackedStringArray("4.6", "Forward Plus")
 
 [rendering]
 
-environment/screen_space_reflection/roughness_quality=3
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
 anti_aliasing/quality/use_taa=true
+environment/screen_space_reflection/roughness_quality=3

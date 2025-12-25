@@ -15,9 +15,11 @@ dest_files=["res://.godot/imported/brass_goblets_2k.gltf-5a9385ffe44244c3feb6133
 
 nodes/root_type=""
 nodes/root_name=""
+nodes/root_script=null
 nodes/apply_root_scale=true
 nodes/root_scale=1.0
 nodes/import_as_skeleton_bones=false
+nodes/use_name_suffixes=true
 nodes/use_node_type_suffixes=true
 meshes/ensure_tangents=true
 meshes/generate_lods=true
@@ -32,19 +34,25 @@ animation/trimming=false
 animation/remove_immutable_tracks=true
 animation/import_rest_as_RESET=false
 import_script/path=""
+materials/extract=0
+materials/extract_format=0
+materials/extract_path=""
 _subresources={
 "materials": {
 "brass_goblets_01": {
 "use_external/enabled": true,
-"use_external/path": "res://polyhaven/brass_goblets/materials/brass_goblets_01.tres"
+"use_external/fallback_path": "res://polyhaven/brass_goblets/materials/brass_goblets_01.tres",
+"use_external/path": "uid://couepradkd3bf"
 },
 "brass_goblets_02": {
 "use_external/enabled": true,
-"use_external/path": "res://polyhaven/brass_goblets/materials/brass_goblets_02.tres"
+"use_external/fallback_path": "res://polyhaven/brass_goblets/materials/brass_goblets_02.tres",
+"use_external/path": "uid://b6npkmiu7cf75"
 },
 "brass_goblets_03": {
 "use_external/enabled": true,
-"use_external/path": "res://polyhaven/brass_goblets/materials/brass_goblets_03.tres"
+"use_external/fallback_path": "res://polyhaven/brass_goblets/materials/brass_goblets_03.tres",
+"use_external/path": "uid://ck8nf4adnby2c"
 }
 }
 }

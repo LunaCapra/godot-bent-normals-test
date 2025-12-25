@@ -1,4 +1,4 @@
-[gd_resource type="ORMMaterial3D" load_steps=5 format=3 uid="uid://bxcjq7qwybnv0"]
+[gd_resource type="ORMMaterial3D" format=3 uid="uid://bxcjq7qwybnv0"]
 
 [ext_resource type="Texture2D" uid="uid://i5yh50r7w8wq" path="res://polyhaven/coffee_table/textures/CoffeeCart_01_cart_diff_2k.png" id="1_orftv"]
 [ext_resource type="Texture2D" uid="uid://d243y4rjwocxh" path="res://polyhaven/coffee_table/textures/CoffeeCart_01_cart_bent.png" id="2_rrxpf"]

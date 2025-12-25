@@ -1,4 +1,4 @@
-[gd_resource type="ORMMaterial3D" load_steps=5 format=3 uid="uid://ck8nf4adnby2c"]
+[gd_resource type="ORMMaterial3D" format=3 uid="uid://ck8nf4adnby2c"]
 
 [ext_resource type="Texture2D" uid="uid://cud485hydgv54" path="res://polyhaven/brass_goblets/textures/brass_goblet_03_diff_2k.png" id="1_wntld"]
 [ext_resource type="Texture2D" uid="uid://caedye5plde5b" path="res://polyhaven/brass_goblets/textures/brass_goblet_03_bent.png" id="2_em1nh"]

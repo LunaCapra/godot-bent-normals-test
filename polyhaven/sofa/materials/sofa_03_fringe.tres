@@ -1,4 +1,4 @@
-[gd_resource type="ORMMaterial3D" load_steps=5 format=3 uid="uid://cw1680l7qk4mp"]
+[gd_resource type="ORMMaterial3D" format=3 uid="uid://cw1680l7qk4mp"]
 
 [ext_resource type="Texture2D" uid="uid://h2v4j1mp7x0a" path="res://polyhaven/sofa/textures/sofa_03_diff_2k.jpg" id="1_g2qfs"]
 [ext_resource type="Texture2D" uid="uid://dfx5u06751emt" path="res://polyhaven/sofa/textures/sofa_03_fringe_bent.png" id="2_2slgc"]

@@ -1,4 +1,4 @@
-[gd_resource type="ShaderMaterial" load_steps=6 format=3 uid="uid://c3qh0rrxufm8l"]
+[gd_resource type="ShaderMaterial" format=3 uid="uid://c3qh0rrxufm8l"]
 
 [ext_resource type="Shader" uid="uid://qjwgwhg5xptn" path="res://visual_shader_test.tres" id="1_13o7l"]
 [ext_resource type="Texture2D" uid="uid://biyxkmxk5phi8" path="res://polyhaven/table/textures/round_wooden_table_01_diff_2k.png" id="2_gk0rk"]
